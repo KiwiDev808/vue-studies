@@ -36,9 +36,6 @@ $ git clone https://github.com/KiwiDev808/vue-studies.git
 # Baixe as dependências
 $ yarn install
 
-# Para rodar a aplicação
-$ yarn run dev
-
 ```
 
 ---
