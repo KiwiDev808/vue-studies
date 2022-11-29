@@ -1,6 +1,8 @@
 <template>
   <article class="post-container">
-    <h3 @click="goToPostView()" class="post-title">{{ post.title }}</h3>
+    <router-link :to="{ name: 'Post', params: { id: `${post.id}` } }">
+      <h3 class="post-title">{{ post.title }}</h3>
+    </router-link>
     <img class="post-image" :src="getImage()" alt="post image" />
     <h4 class="post-author">{{ post.author }}</h4>
     <p class="post-content">{{ post.content }}</p>
@@ -13,11 +15,8 @@ export default {
     post: { required: true },
   },
   methods: {
-    goToPostView() {
-      console.log(this.post.id)
-      this.$router.push(`/post/${this.post.id}`)
-    },
     getImage() {
+      console.log(this.post.imageUrl)
       if (this.isValidUrl(this.post.imageUrl)) return this.post.imageUrl
       return noImage
     },
@@ -42,6 +41,7 @@ export default {
 }
 
 .post-title {
+  cursor: pointer;
   text-align: left;
 }
 .post-image {

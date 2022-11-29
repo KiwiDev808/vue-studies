@@ -42,7 +42,7 @@ export default {
         title: this.postTitle,
         author: this.postAuthor,
         content: this.postContent,
-        imageUrl: this.imageUrl,
+        imageUrl: this.postImageUrl,
       }
       if (this.isValidPost(post)) {
         this.$emit('new-post', post)
