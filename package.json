@@ -1,0 +1,14 @@
+{
+  "name": "vue-by-example",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/KiwiDev808/vue-studies.git",
+  "author": "<lucas.bacelar@grupoboticario.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "start:vue-blog": "yarn workspace vue-blog serve"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
