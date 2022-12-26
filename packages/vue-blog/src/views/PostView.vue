@@ -26,13 +26,10 @@ export default {
   },
   created() {
     const storedPosts = JSON.parse(localStorage.getItem('vue-blog-posts'))
-    console.log({ storedPosts, id: this.$route.params.id })
     if (storedPosts) {
       const foundPost = storedPosts.find((post) => {
-        console.log({ truth: post.id === this.$route.params.id, id: post.id })
         return post.id === this.$route.params.id
       })
-      console.log({ foundPost })
       if (foundPost) {
         this.post = foundPost
         return

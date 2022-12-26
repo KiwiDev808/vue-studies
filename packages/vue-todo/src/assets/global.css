@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #22274f;
+  --inner__background: #ffffff;
+  --outer__background: #dfdfe3;
+  --inactive: #d7dfe3;
+  --gray-50: #f7f8fa;
+}
+
+html {
+  font: 81.25% / 1.15 sans-serif;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: var(--outer__background);
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem 'Lato', sans-serif;
+  color: var(--text);
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}

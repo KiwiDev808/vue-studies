@@ -16,7 +16,6 @@ export default {
   },
   methods: {
     getImage() {
-      console.log(this.post.imageUrl)
       if (this.isValidUrl(this.post.imageUrl)) return this.post.imageUrl
       return noImage
     },
@@ -45,7 +44,7 @@ export default {
   text-align: left;
 }
 .post-image {
-  width: 350px;
+  width: 320px;
   align-self: center;
 }
 

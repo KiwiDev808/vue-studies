@@ -6,7 +6,10 @@
   "author": "<lucas.bacelar@grupoboticario.com.br>",
   "license": "MIT",
   "scripts": {
-    "start:vue-blog": "yarn workspace vue-blog serve"
+    "start:vue-blog": "yarn workspace vue-blog serve",
+    "start:vue-todo": "yarn workspace vue-todo serve",
+    "build:vue-blog": "yarn workspace vue-blog build",
+    "build:vue-todo": "yarn workspace vue-todo build"
   },
   "workspaces": [
     "packages/*"

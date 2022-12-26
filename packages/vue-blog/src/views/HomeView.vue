@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     onNewPost: function (post) {
-      console.log(post)
       this.showModal = false
       this.posts.push(post)
       this.saveOnLocalStore()
